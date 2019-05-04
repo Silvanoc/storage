@@ -67,6 +67,8 @@ The `storage.options` table supports the following options:
 **skip_mount_home** = "false"
    Set to skip a PRIVATE bind mount on the storage home directory.
 Only supported by certain container storage drivers (overlay).
+This option should be set to "true" if using OSTree to deduplicate files on a
+repository ouside of the container storage graph dir.
 
 **remap-uids=**""
 **remap-gids=**""
